@@ -112,7 +112,7 @@ dateiUploadOn: boolean = false;
 dropdownOn: boolean = false;
 
 
-mandatoryOn: boolean = false;
+mandatoryOn: boolean = true;
 
 
 
@@ -647,7 +647,7 @@ resetQuestion(): void{
   this.qcArray = [this.questionCategory];
 
 
-  this.question = {id: 2, question: "Frage eingeben", questionType: this.questionType, mandatory: false, lookbackId: 0, hint: "", formType: "", questionCategory: this.qcArray};
+  this.question = {id: 2, question: "Frage eingeben", questionType: this.questionType, mandatory: true, lookbackId: 0, hint: "", formType: "", questionCategory: this.qcArray};
   this.toggleEdit();
 }
 
